@@ -1,0 +1,50 @@
+.form-group select {
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 15px;
+  font-size: 16px;
+  width: 180px;
+  margin-left: 5%;
+
+}
+
+.signup-page .switch-link{
+    margin-right: 1px;
+    margin-top: -130px;
+}
+  
+  .form-group label {
+    /* width: 0px; Moves label to the right */
+    text-align: left; /* Aligns label text to the right */
+    /* font-size: 16px; */
+    color: #333;
+  }
+  
+
+.auth-image2{
+  margin-left: 0px;
+}
+
+.auth-container2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100vh;
+  margin-right: 235px;
+}
+
+h1{
+  font-family: 'Stardom';
+  font-size: 48px;
+}
+
+.toggle-password2 {
+  position: absolute;
+  right: 18px;
+  top: 66%;
+  transform: translateY(-50%);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #999;
+}

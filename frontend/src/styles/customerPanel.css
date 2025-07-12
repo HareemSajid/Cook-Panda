@@ -1,0 +1,474 @@
+/* Global CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+  font-smooth: always;
+}
+
+/* General Styles */
+.customer-panel {
+  background-color: #f5f5f7;
+  color: #333;
+  padding: 0 30px;
+  font-family: 'Inter', sans-serif;
+  min-height: 100vh;
+}
+.body{
+  color: #444;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  margin-top: 20px;
+}
+
+.navbar-logo {
+  height: 40px;
+  margin-right: 10px;
+}
+
+.search-bar input {
+  padding: 12px 20px;
+  font-size: 1rem;
+  border-radius: 50px;
+  border: 1px solid #ddd;
+  outline: none;
+  width: 300px;
+  transition: width 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-bar input:focus {
+  width: 350px;
+  box-shadow: 0 0 10px #ecb3cc;
+}
+
+/* User Details Button */
+.user-details-btn {
+  padding: 14px 18px;
+  font-size: 1rem;
+  background-color: #e81c74;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* box-shadow: 0 4px 12px rgba(255, 95, 109, 0.2); */
+  transition: background-color 0.3s ease;
+  font-family: "Inter";
+}
+
+.user-details-btn:hover {
+  /* transform: scale(1.02); */
+  /* box-shadow: 0 8px 20px rgba(255, 95, 109, 0.3); */
+  background-color: #fe4a98;
+
+}
+
+
+
+/* Restaurant List */
+.restaurants-list {
+  margin-top: 30px;
+}
+
+.restaurant-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 25px;
+}
+
+.restaurant-card {
+  display: flex;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.restaurant-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}
+
+/* Restaurant Image */
+.restaurant-image-container {
+  width: 40%;
+  height: 100%;
+}
+
+.restaurant-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px 0 0 15px;
+}
+
+/* Restaurant Details */
+.restaurant-details {
+  width: 60%;
+  padding: 20px;
+}
+
+.restaurant-details h3 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.restaurant-details p {
+  color: #777;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+.view-menu-button {
+  background-color: #e81c74;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 30px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.view-menu-button:hover {
+  background-color: #fe4a98;
+}
+
+/* Order History Button */
+.order-history-btn {
+  margin-right: 10px;
+  padding: 14px 18px;
+  font-size: 1rem;
+  background-color: #e81c74;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  /* box-shadow: 0 4px 12px rgba(255, 95, 109, 0.2); */
+  font-family: 'Inter';
+}
+
+.order-history-btn:hover {
+  /* transform: scale(1.05); */
+  background-color: #fe4a98;
+}
+
+
+
+
+
+
+
+
+
+
+/* Loading Spinner for Popups */
+.loading-spinner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+}
+
+.spinner {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #ff5f6d;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1.5s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.customer-panel {
+  /* background-color: #f2efee; Replace with your desired color, e.g., #f0f0f0 for light gray */
+  min-height: 100vh; /* Ensures the div takes at least the full viewport height */
+  /* margin: 0; Removes any default margin */
+  /* padding: 0; Optional: Removes any default padding */
+}
+
+
+.logo-container2 {
+  /* position: absolute; */
+  /* top: 20px; */
+  /* left: 20px; */
+  display: flex;
+  align-items: center;
+  z-index: 1;
+}
+
+
+/* Order Popup - Improved Aesthetics */
+.order-popup,
+.user-popup {
+  position: fixed;
+  top: 57%;
+  left: 64%;
+  transform: translate(-50%, -50%);
+  width: 450px;
+  background: white;
+  border-radius: 20px;
+  box-shadow: 5px 5px 20px 5px rgba(0, 0, 0, 0.15);
+  padding: 0;
+  z-index: 1000;
+  opacity: 0;
+  animation: fadeIn 0.3s forwards ease-out;
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -40%);
+  }
+  100% {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
+
+/* Popup Header - Fixed alignment */
+.order-popup-header,
+.user-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 25px;
+  border-bottom: 1px solid #f1f1f1;
+  background-color: #fafafa;
+  border-radius: 20px 20px 0 0;
+}
+
+.order-popup-header h2,
+.user-popup-header {
+  font-family: 'Cabinet Grotesk';
+  font-size: 30px;
+  font-weight: 700;
+  color: #333;
+  margin: 0;
+  line-height: 1;
+  color: #e81c74;
+}
+
+.close-btn {
+  font-size: 28px;
+  background: none;
+  border: none;
+  color: #777;
+  cursor: pointer;
+  transition: color 0.2s ease;
+  padding: 0;
+  margin: 0;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+}
+
+.close-btn:hover {
+  color: #e81c74;
+}
+
+/* Popup Content - Improved aesthetics */
+.order-popup-content,
+.user-popup-content {
+  margin: 0;
+  padding: 20px 25px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.order-item {
+  padding: 8px 18px;
+  margin-bottom: 15px;
+  background-color: #f9f9f9;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  border-left: 4px solid #e81c74;
+  border-radius: 6px;
+}
+
+.order-item:last-child {
+  margin-bottom: 0;
+}
+
+.order-item:hover {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Item Styles - Enhanced typography */
+.order-item p {
+  font-size: 16px;
+  color: #555;
+  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.order-item p strong {
+  min-width: 100px;
+  display: inline-block;
+  color: #333;
+}
+
+.order-item ul {
+  margin: 12px 0 5px 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.order-item ul li {
+  color: #666;
+  font-size: 16px;
+  padding: 6px 0;
+  border-bottom: 1px dashed #bab8b8;
+  display: flex;
+  justify-content: space-between;
+}
+
+.order-item ul li:last-child {
+  border-bottom: none;
+}
+
+.order-item hr {
+  border: none;
+  height: 1px;
+  background-color: #eee;
+  margin: 5px 0 0 0;
+}
+
+
+/* Shared Popup Styles - For both Order History and User Details */
+.user-popup {
+  position: fixed;
+  top: 36%;
+  left: 64%;
+
+}
+
+
+
+.user-popup-header h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  line-height: 1;
+  font-family: 'Cabinet Grotesk';
+  color: #e81c74;
+}
+
+
+
+/* User Details specific styles */
+.user-popup-content p {
+  padding: 14px 18px;
+  margin-bottom: 12px;
+  background-color: #f9f9f9;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+  transition: all 0.2s ease;
+  border-left: 4px solid #e81c74;
+  font-size: 16px;
+  color: #555;
+  display: flex;
+  align-items: center;
+}
+
+.user-popup-content p:last-child {
+  margin-bottom: 0;
+}
+
+.user-popup-content p:hover {
+  background-color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.user-popup-content p strong {
+  min-width: 140px;
+  display: inline-block;
+  color: #333;
+}
+
+/* Custom scrollbar for both popups */
+.order-popup-content::-webkit-scrollbar,
+.user-popup-content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.order-popup-content::-webkit-scrollbar-track,
+.user-popup-content::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+.order-popup-content::-webkit-scrollbar-thumb,
+.user-popup-content::-webkit-scrollbar-thumb {
+  background: #ddd;
+  border-radius: 10px;
+}
+
+.order-popup-content::-webkit-scrollbar-thumb:hover,
+.user-popup-content::-webkit-scrollbar-thumb:hover {
+  background: #ccc;
+}
+
+.track-popup {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  background: white;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  z-index: 1000;
+  width: 400px;
+  max-width: 90%;
+}
+.track-popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.track-popup-content {
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.track-order-btn {
+  padding: 12px 18px;
+  font-size: 1rem;
+  background-color: #e81c74;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-weight: bold;
+  margin-left: 10px;
+}

@@ -1,0 +1,54 @@
+.section-container {
+    background-color: #fff;
+    padding: 25px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+  }
+  
+  .section-container h2 {
+    color: #333;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  .operation-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin: 25px 0;
+  }
+  
+  .operation-buttons button {
+    background-color: #f8f9fa;
+    border: 1px solid #ddd;
+    padding: 12px 15px;
+    border-radius: 6px;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.2s;
+    font-size: 0.95rem;
+  }
+  
+  .operation-buttons button:hover {
+    background-color: #e9ecef;
+    border-color: #adb5bd;
+  }
+  
+  .content-area {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 6px;
+    margin-top: 20px;
+  }
+  
+  /* Status indicators */
+  .active-status {
+    color: #28a745;
+    font-weight: 500;
+  }
+  
+  .inactive-status {
+    color: #dc3545;
+    font-weight: 500;
+  }

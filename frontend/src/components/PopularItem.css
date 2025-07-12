@@ -1,0 +1,52 @@
+/* frontend/components/init/PopularItem.css */
+
+.popular-item-container {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    max-width: 600px;
+    margin: 2rem auto;
+    text-align: center;
+  }
+  
+  .loading-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #3498db;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 1rem auto;
+  }
+  
+  @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+  }
+  
+  .item-details-card {
+    background: #fafafa;
+    padding: 1.5rem;
+    border-radius: 10px;
+    border: 1px solid #eee;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  }
+  
+  .item-details-card h2 {
+    margin-bottom: 1rem;
+    color: #2c3e50;
+  }
+  
+  .item-details-card p {
+    font-size: 1rem;
+    color: #333;
+    margin: 0.5rem 0;
+  }
+  
+  .error-message {
+    color: #c0392b;
+    font-weight: bold;
+    margin-top: 1rem;
+  }
+  

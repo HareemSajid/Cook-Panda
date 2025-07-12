@@ -1,0 +1,17 @@
+.app-container .sidebar{
+  display: flex;
+  height: 100vh;
+  padding-left: 120px;
+}
+
+.sidebar {
+  width: 250px;
+  background: #2c3e50;
+  color: white;
+  padding: 200px;
+}
+
+.main-content {
+  flex: 1;
+  padding: 200px;
+}

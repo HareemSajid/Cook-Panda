@@ -1,0 +1,20 @@
+.simple-container {
+  padding: 20px;
+  font-family: sans-serif;
+}
+
+.order-card {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 12px;
+  margin-bottom: 10px;
+  background: #f9f9f9;
+}
+
+.message-box {
+  margin-top: 20px;
+}
+
+.search-placeholder {
+  margin-bottom: 15px;
+}
