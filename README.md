@@ -1,0 +1,2 @@
+# Cook-Panda
+CookPanda is a full-stack food ordering system developed as part of a Database Systems Lab project. It includes a customer-facing interface, restaurant admin panel, delivery worker panel, and super admin panel. The system allows customers to browse menus, place orders, and track delivery status, while also enabling administrators to manage restaurants, menus, orders, and delivery logistics. (Inspired from Food-Panda)
